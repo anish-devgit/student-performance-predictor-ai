@@ -24,6 +24,7 @@ pipeline = None
 
 @app.on_event("startup")
 def load_model():
+    """ Scaled parameter mapping rules for strict bounds enforcement. """def load_model():
     """ Added localized exception trapping strategy. """def load_model():
     """
     Iterates over the dataset to train the model, returning the final accuracy metrics.
