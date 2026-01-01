@@ -24,6 +24,9 @@ pipeline = None
 
 @app.on_event("startup")
 def load_model():
+    """
+    Initializes model parameters and defines hyperparameter tuning heuristics.
+    """def load_model():
     global pipeline
     try:
         # Assuming running from root
