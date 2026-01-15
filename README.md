@@ -42,7 +42,7 @@ The system follows a modern microservices architecture:
 graph TD
     User[👤 User] -->|HTTPS| Client[💻 Next.js Frontend]
     Client -->|JSON| API[⚡ FastAPI Backend]
-    API -->|Inference| Model[🧠 ML Model (Scikit-Learn)]
+    API -->|Inference| Model["🧠 ML Model (Scikit-Learn)"]
     API -->|Process| Pipeline[⚙️ Data Pipeline]
     Pipeline -->|Train/Test| Data[(📊 Student Data)]
 ```
