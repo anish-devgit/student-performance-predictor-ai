@@ -45,6 +45,7 @@ cd student-performance-predictor-ai
 # 2. Start the application
 docker-compose up --build
 ```
+
 *   **Frontend:** [http://localhost:3000](http://localhost:3000)
 *   **API Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
 
