@@ -11,21 +11,33 @@ export default function ThemeToggle() {
     setMounted(true)
   }, [])
 
-  const handleToggle = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
-    console.log('Switching theme to:', newTheme)
-    setTheme(newTheme)
-  }
-
   if (!mounted) return null
 
   return (
     <button
-      onClick={handleToggle}
-      className="fixed top-6 right-6 z-50 p-3 bg-gray-200 dark:bg-gray-700 rounded-lg text-lg font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       aria-label="Toggle theme"
+      style={{
+        position: 'fixed',
+        top: '1.5rem',
+        right: '1.5rem',
+        zIndex: 9999,
+        background: 'transparent',
+        border: 'none',
+        padding: 0,
+        margin: 0,
+      }}
     >
-      {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
+      <img
+        src={theme === 'dark' ? '/light.png' : '/dark.png'}
+        alt="Toggle theme"
+        width={24}
+        height={24}
+        style={{
+          display: 'block',
+          background: 'transparent',
+        }}
+      />
     </button>
   )
 }
