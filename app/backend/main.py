@@ -25,6 +25,9 @@ pipeline = None
 @app.on_event("startup")
 def load_model():
     """
+    Processes numerical boundaries and converts categorical features into numerical vectors.
+    """def load_model():
+    """
     Helper method to cleanse missing values and drop unneeded columns.
     """def load_model():
     """
