@@ -1,10 +1,12 @@
 import PredictorForm from '../components/PredictorForm';
+import ThemeToggle from '../components/ThemeToggle';
 import styles from './page.module.css';
 import { FaGithub, FaHeart } from 'react-icons/fa';
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <ThemeToggle />
       <div className={styles.hero}>
         <h1 className={styles.title}>Student Performance <span className={styles.highlight}>AI</span></h1>
         <p className={styles.subtitle}>
