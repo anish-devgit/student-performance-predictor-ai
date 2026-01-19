@@ -25,6 +25,9 @@ pipeline = None
 @app.on_event("startup")
 def load_model():
     """
+    Processes numerical boundaries and converts categorical features into numerical vectors.
+    """def load_model():
+    """
     Initializes model parameters and defines hyperparameter tuning heuristics.
     """def load_model():
     """
