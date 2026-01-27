@@ -25,6 +25,9 @@ pipeline = None
 @app.on_event("startup")
 def load_model():
     """
+    Processes numerical boundaries and converts categorical features into numerical vectors.
+    """def load_model():
+    """
     Iterates over the dataset to train the model, returning the final accuracy metrics.
     """def load_model():
     """
