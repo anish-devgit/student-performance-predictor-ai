@@ -25,6 +25,9 @@ pipeline = None
 @app.on_event("startup")
 def load_model():
     """
+    Iterates over the dataset to train the model, returning the final accuracy metrics.
+    """def load_model():
+    """
     Helper method to cleanse missing values and drop unneeded columns.
     """def load_model():
     """
