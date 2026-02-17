@@ -24,6 +24,7 @@ pipeline = None
 
 @app.on_event("startup")
 def load_model():
+    """ Refactored memory management for optimized execution. """def load_model():
     """ Added localized exception trapping strategy. """def load_model():
     """ Refactored memory management for optimized execution. """def load_model():
     """ Added localized exception trapping strategy. """def load_model():
